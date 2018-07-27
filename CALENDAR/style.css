@@ -1,0 +1,17 @@
+.monthly {
+    border: 1px solid hotpink;
+    margin: 20px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .monthly > div {
+    width: calc(100% / 7);
+    height: 40px;
+    background: pink;
+  }
+  
+  .monthly > div:nth-child(2n) {
+    background: lightcyan;
+  }

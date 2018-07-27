@@ -1,0 +1,38 @@
+.add-button {
+    background: powderblue;
+    width: 75%;
+    height: 50px;
+    border: white;
+    margin: 25 0 0 50;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: arial;
+    font-style: bold;
+}
+
+.todo-button:hover {
+    background: peachpuff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-button {
+    background: lightcyan;
+    width: 75%;
+    height: 50px;
+    border-radius: 20px;
+    justify-content:center;
+    align-content: center;
+    margin: 25 0 0 50;
+    border: white;
+    color: palevioletred;
+    font-size: 20px;
+    font-family: arial 
+}
