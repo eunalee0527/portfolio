@@ -1,0 +1,49 @@
+.blocks {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.blocks div {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: beige;
+    animation: anim 3s infinite;
+}
+
+.blocks div:nth-child(1) { 
+    background: lightpink;
+}
+.blocks div:nth-child(2) { 
+    background: cyan;
+    animation-delay: 100ms;
+}
+.blocks div:nth-child(3) { 
+    background: plum;
+    animation-delay: 200ms;
+}
+.blocks div:nth-child(4) { 
+    background: lightgreen;
+    animation-delay: 300ms;
+}
+
+@keyframes anim {
+    50% {
+        transform:translate(0, 300px);
+        background: rgb(243, 115, 134);
+    }
+}
+
+.switch {
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+    margin-top: 50px;
+}
+
+.switch div {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: beige;
+    animation: anim 3s infinite;
+}

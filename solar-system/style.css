@@ -1,0 +1,59 @@
+body {
+    background: black;
+}
+
+.sun {
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    background: yellow;
+    box-shadow: 0 0 30px yellow;
+
+    position: absolute;
+    top: calc(50vh - 25px);
+    left: calc(50vw - 25px);
+}
+
+.earth {
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, blue, green);
+
+    position: absolute;
+    top: calc(50vh - 10px - 50px);
+    left: calc(50vw - 10px);
+
+    animation: rotate linear 3s infinite;
+    transform-origin: 50% 300%;
+}
+
+.mars {
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, salmon, orange);
+
+    position: absolute;
+    top: calc(50vh - 10px - 80px);
+    left: calc(50vw - 10px);
+
+    animation: rotate linear 3s infinite;
+    transform-origin: 50% 450%;
+}
+
+.neptune {
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    background: skyblue;
+
+    position: absolute;
+    top: calc(50vh - 25px - 150px);
+    left: calc(50vw - 25px);
+
+    animation: rotate linear 4s infinite;
+    transform-origin: 50% 400%;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}

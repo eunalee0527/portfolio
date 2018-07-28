@@ -1,0 +1,41 @@
+.p1 {
+    width: 50px;
+    height: 50px;
+    background: cyan;
+
+    position: absolute;
+    top: 100px;
+    left: 100px;
+
+    animation: animation1 3s infinite;
+}
+
+@keyframes animation1 {
+    0% {
+        
+    }
+    50% {
+        transform: scale(1.5, 0.8)
+        translate(0, 100px)
+        rotate(0.5turn);
+        background: lightcyan;
+    }
+    100% {
+        
+    }
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #eee;
+    border-top: 5px solid lightcoral;
+    border-radius: 50%;
+    margin: 3px;
+    animation: rotate linear 1s infinite;
+}
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+}
